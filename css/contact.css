@@ -1,0 +1,107 @@
+/* Contact form styles */
+
+.wrapper {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 850px; /* Increase the max-width for larger size */
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px; /* Increase padding for more spacious design */
+  border-radius: 10px; /* Slightly larger border radius */
+  box-shadow: 10px 10px 10px 10px #001353;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper .title h1 {
+  color: #c5ecfd;
+  text-align: center;
+  margin-bottom: 35px; /* More spacing below the title */
+  font-size: 2em; /* Larger font size */
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap; /* Allow the form to wrap on smaller screens */
+  justify-content: space-between; /* Add space between input fields */
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow input fields to grow */
+  margin-right: 2%; /* Slightly decrease margin */
+}
+
+.input-fields, .msg {
+  width: 48%; /* Keep the input fields wide */
+}
+
+.input-fields .input, .msg textarea {
+  margin: 15px 0; /* Add more vertical spacing between inputs */
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 15px; /* Increase padding for larger fields */
+  color: #c5ecfd;
+  width: 100%;
+  font-size: 1.1em; /* Slightly larger text in inputs */
+}
+
+.msg textarea {
+  height: 300px; /* Increase height of textarea */
+}
+
+::-webkit-input-placeholder {
+  color: #c5ecfd;
+}
+::-moz-placeholder {
+  color: #c5ecfd;
+}
+:-ms-input-placeholder {
+  color: #c5ecfd;
+}
+
+.btn1 {
+  background: #001353;
+  text-align: center;
+  padding: 20px; /* Increase padding for a larger button */
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2em; /* Larger text for the button */
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 100%; /* Make it responsive on smaller screens */
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .input-fields, .msg {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .msg textarea {
+    height: 150px; /* Smaller textarea on mobile */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  
+  .input-fields, .msg {
+    width: 100%;
+  }
+
+  .msg textarea {
+    height: 100px;
+  }
+}

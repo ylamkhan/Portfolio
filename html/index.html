@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- <link rel="stylesheet" href="../css/Skills.css"> -->
+    <link rel="stylesheet" href="../css/Projects.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                LAMKHANTAR <span>YOUSSEF</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="1000">
+                <img src="../image/img.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Youssef Lamkhantar</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">"I am a student at 1337 School and hold a degree in Mathematics and Computer Science from Semlalia Faculty of Sciences in Marrakech. I am a full-stack developer with experience in DevOps, and I am also interested in artificial intelligence and data science."</p>
+                <div class="social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="align">
+            <div class="card-container">  
+              <div class="card-vertical">
+                <div class="card-front">
+                  <article class="card-front-content">
+                  <h1>Animal </h1>
+                  <p>Hover Me</p>
+                    <p>Vertical 3D Card Flipping</p>
+                  <article>
+                </div>
+                <div class="card-back">
+                  <article class="card-back-content">
+                    <h1>The Dog</h1>
+                    <img src="../image/img.jpg" > 
+                   <article>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+                <div class="card-horizontal">
+                    <div class="card-front"> 
+                      <article class="card-front-content">
+                        <h1>The Food</h1>
+                        <p>Hover Me</p>          <p>Horizontal 3D Card Flipping</p>
+                      <article>
+                    </div>
+                    <div class="card-back card-back-hr">
+                      <article class="card-back-content">
+                    <h1>Salad</h1>
+                    <img src="../image/img.jpg" > 
+                   <article>
+                    </div>
+                </div>
+            </div>
+            
+              <div class="card-container">  
+              <div class="card-vertical">
+                <div class="card-front">
+                  <article class="card-front-content">
+                        <h1>The City </h1>
+                        <p>Hover Me</p>
+                    <p>Vertical 3D Card Flipping</p>
+                   <article>
+                </div>
+                <div class="card-back">
+                 <article class="card-back-content">
+                    <h1>Random City</h1>
+                    <img src="../image/img.jpg" > 
+                   <article>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+                <div class="card-horizontal">
+                    <div class="card-front"> 
+                      <article class="card-front-content">
+                        <h1>Nature </h1>
+                        <p>Hover Me</p>
+                        <p>Horizontal 3D Card Flipping</p>
+                      <article>
+                    </div>
+                    <div class="card-back card-back-hr">
+                       <article class="card-back-content">
+                    <h1>Sea </h1>
+                    <img src="../image/img.jpg" > 
+                   <article>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills-container" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Skills</h2>
+            <p>Showcase your skills here.</p>
+            <!-- Add skills content here -->
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+   <section id="contact">
+    <div class="wrapper">
+      <div class="title">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="contact-form">
+        <div class="input-fields">
+          <input type="text" class="input" placeholder="Name">
+          <input type="text" class="input" placeholder="Email Address">
+          <input type="text" class="input" placeholder="Phone">
+          <input type="text" class="input" placeholder="Subject">
+        </div>
+        <div class="msg">
+          <textarea placeholder="Message"></textarea>
+          <div class="btn1">Send</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- AOS Initialization -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+
+    <!-- JavaScript for Menu & Interactions -->
+    <script src="../js/script.js"></script>
+    <!-- <script src="../js/contact.js"></script>
+    <script src="../js/skills.js"></script>
+    <script src="../js/project.js"></script> -->
+</body>
+</html>
